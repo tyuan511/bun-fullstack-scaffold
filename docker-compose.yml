@@ -1,0 +1,16 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: bun-fullstack-scaffold:latest
+    container_name: bun-fullstack-app
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+    volumes:
+      # 持久化宿主机的 SQLite 数据库
+      - ./data:/app/data
+    restart: unless-stopped

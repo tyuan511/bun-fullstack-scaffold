@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Compiled Standalone Binaries
+bun-fullstack-app
+bun-fullstack-app-*
+todo-app
+todo-app-*
+*.exe
+
+# Production build
+dist/
+
+# SQLite data directory
+data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
